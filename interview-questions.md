@@ -32,7 +32,8 @@ Note to Charlean: it's not plagiarism if you include references :)
 
 Your answer: I actually don't know much about this, I know it's an unnamed arrow function that you can pass as an argument when doing a component call.
 
-Researched answer: Anonymous functions are functions without names that are not accessible after it's initial creation unless you assign it to a variable. They are executed when the interpreter comes across them. This means that you cannot call them before the interpreter has discovered it. It also means that nay code that appears tup to that point could potentially alter what goes on inside of an anonymous function. Sometimes anonymous functions are called "immediately invoked function expressions (IIFE), pronounced "iffy". They are used for code that only needs to run once within a task, rather than repeatedly being called by other parts of the script. IIFEs are commonly used as a wrapper around a set of code. Any variables declared within that anonymous function are effectively protected from variables in other scripts that might have the same name. This is due to the concept of scope.
+Researched answer: Anonymous functions are functions that are not named and executed once the interpreter reads it. Thusly, it can't be called again by other parts of the script unless it's assigned it a variable.
+
 
 ref: JavaScript & JQuery interacive front-end web development by Jon Duckett
 
@@ -48,15 +49,7 @@ ref: https://www.ncl.ucar.edu/Document/HLUs/User_Guide/classes/classoview.shtml#
 
 Your answer: state exists in the file that it is created and it's data cannot explicitly move between files, however, props can move data between parent and child components. Props is an object with no explicit values unless assigned them.
 
-Researched answer: This will be provided in list form:
-    1. Props are Read-Only / State changes can be asynchronous
-    2. Props are immutable / State is mutable
-    3. Props allow you to pass data between components as an argument / State hold info about the components
-    4. Props can be accessed by the child component / State cannot be accessed by child components
-    5. Props are used to communicate between components / States can be used for rendering dynamic changes with the component
-    6. Stateless components can have Props / Stateless components cannot have State
-    7. Props make components reusable / State cannot make components reusable
-    8. Props are external and controlled by whatever renders the component / The State is internal and controlled by the React component itself.
+Researched answer: props can pass data between components whereas state cannot be passed between components.
 
 ref: https://www.javatpoint.com/react-state-vs-props
 
@@ -64,7 +57,7 @@ ref: https://www.javatpoint.com/react-state-vs-props
 
 Your answer: I don't know, I haven't used span very much at all.
 
-Researched answer: div and span are both html elements that group together related parts of a web page. However, they serve different functions. A div element is used for block-level organization and styling of page elements, while span is used for inline organization and styling. Span tags are used on small segments of text, links, images, and other HTML elements that appear inline with the surrounding content. Here are examples of both:
+Researched answer: divs are containers that can exist on multiple lines whereas spans are containers that exist in-line.
 
 DIV: <div id=“paragraphs”>
     <p>This is my first paragraph.</p>
